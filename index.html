@@ -13,7 +13,7 @@
     <div id="messages"></div>
 
     <script>
-        const socket = new WebSocket("ws://party-line-bot.zeabur.app/api/v1/danmaku/ws");
+        const socket = new WebSocket("wss://party-line-bot.zeabur.app/api/v1/danmaku/ws");
 
         socket.onopen = (event) => {
             console.log("WebSocket connection opened:", event);
